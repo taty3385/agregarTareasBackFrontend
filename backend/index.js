@@ -8,9 +8,11 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
+app.use(express.static(path.join(__dirname, "frontend")))
+
 app.use("/api/tasks", taskRouter);
 app.get("/", (req, res) => {
-  res.send("Bienvenido a la API de Tareas Pendientes");
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
 app.listen(PORT, () => {
