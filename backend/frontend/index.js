@@ -3,7 +3,7 @@ const description = document.getElementById("descripcion");
 const form = document.getElementById("task-form");
 const taskList = document.getElementById("task-list");
 const submitButton = document.getElementById("agregar-tarea");
-const API = "http://localhost:3000/api/tasks";
+const API = "/api/tasks";
 
 let editingTaskId = null; 
 
