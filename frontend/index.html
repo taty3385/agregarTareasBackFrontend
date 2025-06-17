@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agregar Tareas</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>Agregar Tareas</h1>
+   <h3>Buscar tarea por ID</h3>
+  <input type="text" id="buscar-id" placeholder="ID de la tarea" />
+  <button id="buscar-btn">Buscar</button>
+  <div id="resultado-busqueda"></div>
+  
+  <form id="task-form">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required />
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion"></textarea>
+
+    <button type="submit" id="agregar-tarea">Agregar Tarea</button>
+  </form>
+
+  <h2>Tareas Pendientes</h2>
+  <ul id="task-list"></ul>
+
+ 
+
+  <script src="index.js"></script>
+</body>
+</html>
